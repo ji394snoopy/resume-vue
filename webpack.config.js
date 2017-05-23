@@ -3,11 +3,13 @@ var webpack = require('webpack')
 
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
-    entry: './src/main.js',
+    entry: {
+        build: './src/main.js',
+    },
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
-        filename: 'build.js'
+        filename: '[name].js'
     },
     module: {
         rules: [{
@@ -32,6 +34,9 @@ module.exports = {
             use: ExtractTextPlugin.extract({
                 use: 'css-loader'
             })
+        }, {
+            test: /\.(eot|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?/,
+            loader: 'url-loader'
         }]
     },
     plugins: [new ExtractTextPlugin('styles.css')],

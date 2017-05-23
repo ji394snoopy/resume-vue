@@ -15,41 +15,46 @@
                         <a class="item" href="#awards">AWARDS</a>
                         <a class="item" href="#skills">SKILLS</a>
                         <a class="item" href="#experience">EXPERIENCE</a>
-                        <a class="item" href="#education">EDUCATION</a></div>
+                        <a class="item" href="#education">EDUCATION</a>
+                        <a class="item" href="mines">PLAYMINES</a>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
 </template>
 <script>
-export default {
-    data: function() {
-        return {
-            menuIsActive: false
+    export default {
+        data: function() {
+            return {
+                menuIsActive: false
+            }
         }
     }
-}
+
 </script>
 <style>
-.Nav {
-    margin-top: 30px;
-}
-
-@media screen and (max-width: 768px) {
     .Nav {
-        visibility: hidden;
-        position: fixed;
-        top: 1em;
-        right: 1em;
-        margin: 0;
-        z-index: 20;
-        transition: .5s;
-        -webkit-transition: .5s;
-        opacity: 0;
+        margin-top: 30px;
     }
-    .Nav.active {
-        visibility: visible;
-        opacity: 1;
+    
+    @media screen and (max-width: 768px) {
+        .Nav {
+            visibility: hidden;
+            position: fixed;
+            top: 1em;
+            right: 1em;
+            margin: 0;
+            z-index: 20;
+            transition: .5s;
+            -webkit-transition: .5s;
+            opacity: 0;
+        }
+        .Nav.active {
+            visibility: visible;
+            opacity: 1;
+        }
     }
-}
+
 </style>
+

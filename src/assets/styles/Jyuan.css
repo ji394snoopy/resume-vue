@@ -2,8 +2,10 @@
 ribbon zindex 15
 hamburger 21
 nav 20
-
-
+*/
+/*
+some of class split to the component's style
+e.g. circle-percentage
 */
 
 
@@ -499,6 +501,11 @@ h2+.sub {
     color: #333333;
 }
 
+.ui.lightred{
+    background-color: #fe4042;
+    color: #ffffff;
+}
+
 .ui.yellow.tertiary {
     background-color: #fdd76b;
 }
@@ -518,4 +525,8 @@ h2+.sub {
 
 .word-lightblue {
     color: #31b0d5;
+}
+
+.word-lightred {
+    color: #fe4042;
 }

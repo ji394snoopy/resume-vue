@@ -6,6 +6,8 @@ import { router } from './router'
 
 require('./assets/styles/reset.css');
 require('./assets/styles/Jyuan.css');
+require('font-awesome/css/font-awesome.css');
+
 
 Vue.use(VueRouter)
 new Vue({
