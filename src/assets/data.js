@@ -29,6 +29,11 @@ const skills = [{
     isBase: true,
     count: 0
 }, {
+    name: "Angular.js",
+    percentage: 80,
+    isBase: false,
+    count: 0
+}, {
     name: "Vue.js",
     percentage: 75,
     isBase: false,
@@ -61,11 +66,42 @@ const skills = [{
 }];
 
 const experience = [{
+    company: "Systex 精誠資訊",
+    job: "軟體工程師",
+    time: "2017-~",
+    detail: [
+        "編寫新元件、維護就有元件",
+        "維護共用平台，彙整並處理其他金融交易模組問題",
+        "編寫金融交易模組",
+        "協助壓力測試"
+    ],
+    tech: [
+        "Html / Css",
+        "JavaScript / Angular.js / Jquery",
+        "Bootstrap / Angular.ui",
+        "Java",
+        "Oracle / MS-sql",
+        "Jmeter (壓力測驗工具)"
+    ]
+}, {
     company: "LifeLine 生命連線",
     job: "前端工程師",
     time: "2016-2017",
-    detail: ["進行網站前台和後台設計及編寫", "維護及更新現有網站", "進行Android系統開發 (1month)", "進行Ios系統開發 (1month)"],
-    tech: ["Html / Css", "JavaScript / Ajax / Vue.js / Jquery", "Bootstrap / W3.css", "Swift / Xcode", "Java / Xml /Android Studio"],
+    detail: [
+        "開發新內部系統平台：模組化建立問卷、輸出報表、使用者建單、會員系統... (Vue.js)",
+        "模組、優化程式",
+        "進行官方網站前台和後台設計及編寫 (作品1)",
+        "維護及更新現有網站",
+        "進行Android系統開發 (3month)",
+        "進行Ios系統開發 (3month)"
+    ],
+    tech: [
+        "Html / Css",
+        "JavaScript / Ajax / Vue.js / Jquery",
+        "Bootstrap / W3.css",
+        "Swift / Xcode",
+        "Java / Xml /Android Studio"
+    ],
     works: [{
         title: '基金會官網',
         href: 'http://www.lifecare.org.tw'
@@ -74,14 +110,27 @@ const experience = [{
     company: "DreamLearn",
     job: "Ios工程師",
     time: "2015-2016",
-    detail: ["進行現有Objecive-C程式維護", "嘗試用Swift語言重新編寫(畢業後交接)"],
-    tech: ["Swift / Xcode", "Objective-C"]
+    detail: [
+        "進行現有Objecive-C程式維護",
+        "嘗試用Swift語言重新編寫(畢業後交接)"
+    ],
+    tech: [
+        "Swift / Xcode",
+        "Objective-C"
+    ]
 }, {
     company: "碳基科技",
     job: "實習生",
     time: "2015-2015",
-    detail: ["2個月實習經驗", "以Html5+PhoneGap製作產品介紹及客服服務App(未上架)"],
-    tech: ["Html / Css", "JavaScript / Jquery", "PhoneGap"],
+    detail: [
+        "2個月實習經驗",
+        "以Html5+PhoneGap製作產品介紹及客服服務App(未上架)"
+    ],
+    tech: [
+        "Html / Css",
+        "JavaScript / Jquery",
+        "PhoneGap"
+    ],
     works: [{
         title: 'Uaver App',
         modal: 'picture',
