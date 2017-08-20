@@ -16,6 +16,9 @@
                     <Experience :experience="data.experience" :modal="modal"></Experience>
                 </section>
                 <section class="ui darkblue">
+                    <Sideproj :projects="data.sideproj"></Sideproj>
+                </section>
+                <section class="ui darkblue">
                     <Education :education="data.education" :modal="modal"></Education>
                 </section>
                 <section class="ui darkblue">
@@ -36,6 +39,7 @@ import About from './../components/about'
 import Award from './../components/award'
 import Skill from './../components/skill'
 import Experience from './../components/experience'
+import Sideproj from './../components/sideproj'
 import Education from './../components/education'
 import Introduction from './../components/introduction'
 import ModalWrapper from './../layouts/modal-wrapper'
@@ -60,6 +64,7 @@ export default {
             Award,
             Skill,
             Experience,
+            Sideproj,
             Education,
             Introduction,
             ModalWrapper,

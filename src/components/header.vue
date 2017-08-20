@@ -15,8 +15,8 @@
                         <a class="item" href="#awards">AWARDS</a>
                         <a class="item" href="#skills">SKILLS</a>
                         <a class="item" href="#experience">EXPERIENCE</a>
+                        <a class="item" href="#sideproj">SIDEPROJ</a>
                         <a class="item" href="#education">EDUCATION</a>
-                        <a class="item" href="mines">PLAYMINES</a>
                     </div>
                 </div>
             </nav>

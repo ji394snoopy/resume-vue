@@ -7,6 +7,9 @@ nav 20
 some of class split to the component's style
 e.g. circle-percentage
 */
+/* 
+end of css is custom
+*/
 
 
 /******* global *******/
@@ -519,6 +522,11 @@ h2+.sub {
     color: #ffffff;
 }
 
+.ui.lightgreen{
+    background-color: #86EA7A;
+    color:#ffffff;
+}
+
 .word-white {
     color: #fff;
 }
@@ -530,3 +538,12 @@ h2+.sub {
 .word-lightred {
     color: #fe4042;
 }
+
+/*** hover ***/
+a[href]{
+    transition: color .75s ease;
+}
+a[href]:hover{
+    color: #FEF76A;
+}
+

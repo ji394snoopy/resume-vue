@@ -5,7 +5,7 @@
             <div class="textContent">
                 <a class="header large word-darkblue" href="#ibusker">iBusker--具人文內涵的城市旅遊App</a>
                 <ul>獲得獎項:
-                    <li v-for="award in awards">{{award}}</li>
+                    <li v-for="award in awards" :key="award">{{award}}</li>
                 </ul>
             </div>
         </div>

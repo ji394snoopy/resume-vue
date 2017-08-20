@@ -5,7 +5,7 @@
                 <a class="close word-white" v-on:click="$emit('close')"></a>
             </div>
             <div class="body padded">
-                <div class="img-wrapper" v-for="(picture,index) in pictures" v-if="current===index">
+                <div class="img-wrapper" v-for="(picture,index) in pictures" :key="picture" v-if="current===index">
                     <img :src="picture.href" alt="picture.name">
                 </div>
                 <div class="navbar">
@@ -15,7 +15,7 @@
             </div>
             <div class="footer padded">
                 <ul>
-                    <li v-for="(picture,index) in pictures" v-on:click="current = index"><span class="circle" v-bind:class="{'active':current===index}"></span></li>
+                    <li v-for="(picture,index) in pictures" :key="picture" v-on:click="current = index"><span class="circle" v-bind:class="{'active':current===index}"></span></li>
                 </ul>
             </div>
         </div>

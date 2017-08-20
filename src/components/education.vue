@@ -1,6 +1,6 @@
 <template>
     <div class="segment hasRibbon">
-        <a class="ui lightblue ribbon header" id="education">Education</a>
+        <a class="ui lightblue ribbon header" id="education">EDUCATION</a>
         <div class="segment-wrapper">
             <div class="list">
                 <div class="item">

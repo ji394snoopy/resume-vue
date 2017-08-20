@@ -7,21 +7,21 @@
                     <i class="icon male"></i>
                     <div class="title cell one word-darkblue">Name</div>
                     <div class="content cell two">
-                        <a>{{aboutme.name}}</a>
+                        {{aboutme.name}}
                     </div>
                 </div>
                 <div class="item rows">
                     <i class="icon male"></i>
                     <div class="title cell one word-darkblue">Education</div>
                     <div class="content cell two">
-                        <a>{{aboutme.school}}</a>
+                        {{aboutme.school}}
                     </div>
                 </div>
                 <div class="item rows">
                     <i class="icon male"></i>
                     <div class="title cell one word-darkblue">Department</div>
                     <div class="content cell two">
-                        <a>{{aboutme.department}}</a>
+                        {{aboutme.department}}
                     </div>
                 </div>
                 <div class="item rows">
@@ -56,7 +56,7 @@
                     <i class="icon birth"></i>
                     <div class="title cell one word-darkblue">Birth</div>
                     <div class="content cell two">
-                        <a>{{aboutme.birth}}</a>
+                        {{aboutme.birth}}
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
 </template>
 
 <script>
-	export default{
-		props:['aboutme']
-	}
+export default {
+    props: ['aboutme']
+}
 </script>

@@ -6,7 +6,7 @@
                 <div class="controlObj flagCObj vertical-center horizontal-center" v-bind:class="{active:isFlaging}" v-on:click="isFlaging=!isFlaging">
                     <i class="fa fa-flag fa-2x word-lightred" aria-hidden="true"></i>
                 </div>
-                <div class="horizontal-center" v-for="mineColumn in Mines">
+                <div class="horizontal-center" v-for="mineColumn in Mines" :key="mineColumn">
                     <Mine v-for="mine in mineColumn" :key="mine" :x="mine.x" :y="mine.y" :flag.sync="mine.flag" :bomb="mine.bomb" :clickable.sync="mine.clickable" :isClicked.sync="mine.isClicked" :count="mine.count" :isFlaging="isFlaging" v-on:catchBomb="isgg=true,isTicking=false" v-on:catchZero="checkZero($event),winCountDown+=1" v-on:click.native="isTicking=isgg?false:true" v-on:gonnaWin="winCountDown-=1">
                     </Mine>
                     <div v-show="isgg" class="controlObj mask"></div>
