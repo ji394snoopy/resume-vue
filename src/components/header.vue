@@ -8,6 +8,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </a>
+            <Screenshot :shottype="'pdf'"></Screenshot>
             <nav class="Nav" v-bind:class="{active: menuIsActive}" v-on:click="menuIsActive = !menuIsActive">
                 <div class="ui darkblue menu">
                     <div class="rows justify">
@@ -24,37 +25,41 @@
     </header>
 </template>
 <script>
-    export default {
-        data: function() {
-            return {
-                menuIsActive: false
-            }
+import Screenshot from './screenshot'
+
+export default {
+    data: function () {
+        return {
+            menuIsActive: false
         }
+    },
+    components: {
+        Screenshot
     }
+}
 
 </script>
 <style>
-    .Nav {
-        margin-top: 30px;
-    }
-    
-    @media screen and (max-width: 768px) {
-        .Nav {
-            visibility: hidden;
-            position: fixed;
-            top: 1em;
-            right: 1em;
-            margin: 0;
-            z-index: 20;
-            transition: .5s;
-            -webkit-transition: .5s;
-            opacity: 0;
-        }
-        .Nav.active {
-            visibility: visible;
-            opacity: 1;
-        }
-    }
+.Nav {
+    margin-top: 30px;
+}
 
+@media screen and (max-width: 768px) {
+    .Nav {
+        visibility: hidden;
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        margin: 0;
+        z-index: 20;
+        transition: .5s;
+        -webkit-transition: .5s;
+        opacity: 0;
+    }
+    .Nav.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
 </style>
 

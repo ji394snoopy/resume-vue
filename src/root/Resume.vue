@@ -34,7 +34,7 @@
     </div>
 </template>
 <script>
-import Navigationbar from './../components/header';
+import Navigationbar from './../components/header'
 import About from './../components/about'
 import Award from './../components/award'
 import Skill from './../components/skill'

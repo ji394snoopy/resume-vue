@@ -3,7 +3,7 @@
         <a class="ui darkblue ribbon header" id="skills">SKILLS</a>
         <div class="segment-wrapper">
             <div class="rows justify">
-                <div class="cell horizontal-center four textContent" v-for="skill in skills">
+                <div class="cell horizontal-center four textContent" v-for="skill in skills" :key="skill">
                     <div class="circle-percentage" v-bind:class="{little : !skill.isBase}">
                         <div class="bgcircle" v-if="skill.count<180" v-bind:style="{backgroundImage: 'linear-gradient(' + (90 + skill.count) + 'deg, transparent 50%, #d6d6d6 50%),linear-gradient(-90deg, ' + circlePercentageColor + ' 50%, transparent 50%)'}">
                             <div class="circle">
@@ -24,26 +24,25 @@
 </template>
 <script>
 export default {
-    data: function() {
+    data: function () {
         return {
             circlePercentageColor: "#31b0d5"
         }
     },
     props: ['skills'],
-    mounted: function() {
-        var skills = this.skills,
-            animate = function(percent, item) {
-                var counter = item.count;
-                if (percent > counter) {
-                    item.count++;
-                    setTimeout(function() {
-                        animate(percent, item);
-                    }, 1);
-                }
-            };
-        setTimeout(function() {
-            skills.forEach(item => animate(item.percentage / 100 * 360, item));
-        }, 250);
+    mounted: function () {
+        const skills = this.skills;
+
+        skills.forEach(item => {
+            const percentage = item.percentage / 100 * 360,
+                clock = setInterval(function () {
+                    let counter = item.count;
+                    if (percentage > counter)
+                        item.count + 5 > percentage ? item.count += percentage - item.count : item.count += 5;
+                    else
+                        clearInterval(clock);
+                }, 10);
+        });
     }
 }
 </script>
