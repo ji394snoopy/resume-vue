@@ -8,7 +8,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </a>
-            <Screenshot :shottype="'pdf'"></Screenshot>
+            <!-- <Screenshot :shottype="'pdf'"></Screenshot> -->
             <nav class="Nav" v-bind:class="{active: menuIsActive}" v-on:click="menuIsActive = !menuIsActive">
                 <div class="ui darkblue menu">
                     <div class="rows justify">
