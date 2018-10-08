@@ -13,7 +13,7 @@
 </template>
 <script>
 export default {
-    props: ['awards'],
-}
+  props: ['awards']
+};
 </script>
 

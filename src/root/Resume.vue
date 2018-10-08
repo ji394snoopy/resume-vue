@@ -1,6 +1,6 @@
 <template>
     <div id="resume">
-        <Navigationbar></Navigationbar>
+        <Navigationbar :aboutme="data.aboutme"></Navigationbar>
         <div class="padded container">
             <div class="lightshad">
                 <section>
@@ -20,9 +20,6 @@
                 </section>
                 <section class="ui darkblue">
                     <Education :education="data.education" :modal="modal"></Education>
-                </section>
-                <section class="ui darkblue">
-                    <Introduction></Introduction>
                 </section>
             </div>
         </div>
