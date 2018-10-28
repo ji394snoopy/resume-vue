@@ -73,7 +73,6 @@ export default {
     handleScroll() {
       const doc = document.documentElement;
       const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-      console.log(this.mobileTop);
       if (screen.width <= 768) {
         this.mobileTop = top <= 30;
       } else if (screen.width > 768) {

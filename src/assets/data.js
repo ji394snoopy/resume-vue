@@ -5,7 +5,8 @@ const aboutme = {
   github: 'https://github.com/ji394snoopy',
   mail: 'eric60513@gmail.com',
   phone: '0975-220-827',
-  myPhone: '886975220827'
+  myPhone: '886975220827',
+  intro:'喜愛研究前端的技術和JavaScript，以能夠專精js橫跨前後端為目標，除了前端技術也有在撰寫Swift和Java。'
 };
 
 const awards = [
@@ -19,7 +20,7 @@ const awards = [
 
 const skills = [
   {
-    name: 'Html5/Css3',
+    name: 'HTML5/CSS3',
     percentage: 85,
     isBase: true,
     count: 0
@@ -55,7 +56,7 @@ const skills = [
     count: 0
   },
   {
-    name: 'IOS Develop',
+    name: 'iOS Develop',
     percentage: 75,
     isBase: false,
     count: 0
@@ -80,7 +81,7 @@ const experience = [
     job: '軟體工程師',
     time: '2017 - ~',
     detail: [
-      '開發金融交易模組，主要為理財規劃模組，負責範圍橫跨前端、後端及IOS App',
+      '開發金融交易模組，主要為理財規劃模組，負責範圍橫跨前端、後端及iOS App',
       '理財規劃模組：計算投資預算，推薦商品，客製商品，最後產出規劃書',
       '主導部門新專案樣本開發',
       '開發前端新元件以加速專案進行、維護舊有元件',
@@ -89,11 +90,11 @@ const experience = [
       '協助上線壓力測試'
     ],
     tech: [
-      'Html / Css / Bootstrap / Angular.ui',
-      'JavaScript / Angular.js / Jquery / Vue.js',
-      'Swift(IOS) / Onsen UI(Hybrid App)',
+      'HTML / CSS / Bootstrap / Angular.ui',
+      'JavaScript / Angular.js / JQuery / Vue.js',
+      'Swift(iOS) / Onsen UI(Hybrid App)',
       'Java / Spring',
-      'Oracle / MS-sql',
+      'Oracle / MS SQL',
       'Jmeter'
     ]
   },
@@ -107,12 +108,12 @@ const experience = [
       '開發、設計官方網站前台和後台系統 (作品1)',
       '維護及更新現有網站',
       '進行Android系統開發',
-      '進行IOS系統開發'
+      '進行iOS系統開發'
     ],
     tech: [
-      'Html / Css / Bootstrap / W3.css',
-      'JavaScript / Ajax / Vue.js / Jquery',
-      'Swift(IOS)',
+      'HTML / CSS / Bootstrap / W3.css',
+      'JavaScript / Ajax / Vue.js / JQuery',
+      'Swift(iOS)',
       'Java(Android)'
     ],
     works: [
@@ -124,7 +125,7 @@ const experience = [
   },
   {
     company: 'DreamLearn',
-    job: 'IOS工程師',
+    job: 'iOS工程師',
     time: '2015 - 2016',
     detail: ['維護現有Objective-C程式', '以Swift語言重新編寫專案'],
     tech: ['Swift', 'Objective-C']
@@ -133,8 +134,8 @@ const experience = [
     company: '碳基科技',
     job: '實習生',
     time: '2015 - 2015',
-    detail: ['短期實習', '以Html5+PhoneGap製作產品介紹及客服服務App('],
-    tech: ['Html / Css', 'JavaScript / Jquery', 'PhoneGap'],
+    detail: ['短期實習', '以HTML5+PhoneGap製作產品介紹及客服服務App('],
+    tech: ['HTML / CSS', 'JavaScript / JQuery', 'PhoneGap'],
     works: [
       {
         title: 'Uaver App',
@@ -154,7 +155,7 @@ const education = {
       title: '系所課程內容資訊和管理參半 :',
       items: [
         '管理課程: 經濟學、管理學、統計學、初等會計學、財務管理 ...',
-        '資訊課程: Java、Mysql(PHP)、Html/JavaScript、XML、專案管理 ...',
+        '資訊課程: Java、MySQL(PHP)、HTML/JavaScript、XML、專案管理 ...',
         '個人選擇: C++/Cli(資工)、SAS ...'
       ]
     },
@@ -178,7 +179,7 @@ const education = {
     }
   ],
   detail_p: [
-    '大三專題三人團隊，以街頭藝人為出發點開發行動App--iBusker。以Html5、Css、JavaScript為基礎並由PhoneGap把網頁包裝成行動App，後端以雲端SAAS平台Parse.com(已關閉)和Heroku建立，並結合Beacon和定位技術發送通知給使用者。 此構想獲得教授們的青睞，也參加許多比賽獲得佳績。'
+    '大三專題三人團隊，以街頭藝人為出發點開發行動App--iBusker。以HTML5、CSS、JavaScript為基礎並由PhoneGap把網頁包裝成行動App，後端以雲端SAAS平台Parse.com(已關閉)和Heroku建立，並結合Beacon和定位技術發送通知給使用者。 此構想獲得教授們的青睞，也參加許多比賽獲得佳績。'
   ]
 };
 
